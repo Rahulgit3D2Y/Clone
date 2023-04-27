@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .accordion-item {
+  margin-bottom: 20px;
+}
+
+
+    @media screen and (max-width: 768px) {
+    /* Adjust the video size for smaller screens */
+    .video-container {
+      padding-bottom: 75%; /* 4:3 aspect ratio */
+    }
+  }
+</style>
+<body>
+
+    <!-- Navbar -->
+
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"  aria-label="Offcanvas navbar large" style="height: 100px;">
+             <div class="container-fluid">
+               <a class="navbar-brand" href="#">Res</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"          aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                 <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                 </div>
+                 <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="#">Home</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Link</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Dropdown
+                       </a>
+                       <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="#">Action</a></li>
+                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                         <li>
+                           <hr class="dropdown-divider">
+                         </li>
+                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                       </ul>
+                     </li>
+                   </ul>
+                   <form class="d-flex mt-3 mt-lg-0" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success" type="submit">Search</button>
+                   </form>
+                 </div>
+               </div>
+             </div>
+        </nav>
+    </section>
+    <!-- <section>
+        <div class="container-fluid d-flex justify-content-center ">
+            <div><img src="https://source.unsplash.com/100x100/?toy" alt=""></div>
+            <div><img src="https://source.unsplash.com/100x100/?cat" alt=""></div>
+            <div><img src="https://source.unsplash.com/100x100/?dog" alt=""></div>
+        </div>
+    </section> -->
+
+
+    <!-- carousel -->
+    <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x400/?car" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x400/?bike" class=" w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x400/?truck" class=" w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          <script>
+            $(document).ready(function() {
+              // Remove 'active' class from the first slide
+              $('#carouselExampleFade .carousel-item:first').removeClass('active');
+          
+              // Add 'active' class to the second slide
+              $('#carouselExampleFade .carousel-item:nth-child(2)').addClass('active');
+            });
+          </script>
+          
+    </section>
+
+    <!-- Marquee -->
+    <section>
+       <marquee behavior="scroll" direction="left"          class="bg-primary p-3" scrollamount="10">
+             <a href="https://www.google.com"       style="color:white; padding-right: 10px;">Click         here to go to Google</a>
+             <a href="https://www.youtube.com"          style="color:white; padding-right: 10px;">Click         here to go to YouTube</a>
+        </marquee>
+
+
+    </section>
+
+    <section class="bg-secondary p-5">
+
+
+        <section>
+            <div class=" container d-flex flex-wrap text-center">
+                <h2 class="text-light">Lorem ipsum dolor sit amet consectetur.</h2>
+                <button class="btn btn-lg btn-warning">View List</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="https://source.unsplash.com/700x600/?cyber" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 text-light">
+                    <div class="d-flex align-items-center">
+                        <h3 class="pe-4">About</h3>
+                        <hr class="text-success w-25">
+                      </div>                   
+                    <h1>AAAAAAAAAAA1111
+                        <br>AA</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquam dolor, minus perferendis illum totam! Id veritatis laudantium ea magni soluta officia porro quas. Tempore, rerum ducimus? Consequuntur, quod? Iste facilis, fm ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquam dolor, minus perferendis illum totam! Id veritatis laudantium ea magni soluta officia porro quas. Tempore, rerum ducimus? Consequuntur, quod? Iste facilis, fm ipsum dolr, quod? Iste facilis, fm ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique,as. Tempore, rerum ducimus? Consequuntur, quod? Iste facilis, facere totam deserunt voluptate quam nemo rerum!</h4>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <!-- Youtube -->
+        <section>
+            <div class="container justify-content-center align-items-center">
+                <div class="d-flex align-items-center">
+                    <h3 class="pe-4">About</h3>
+                    <hr class="text-success w-25">
+                </div> 
+                <h1 class="text-primary">Hacathon</h1>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="video-container" style="position: relative;
+                        width: 100%;
+                        height: 0;
+                        padding-bottom: 56.25%; ">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{VIDEO_ID}" frameborder="0" allowfullscreen style="position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            min-width: none;
+                            height: 100%;"></iframe>
+                          </div>
+                    </div>                                        
+                    <div class="col-lg-4">
+                        <div style="max-width: 400px; border-radius: 1rem; padding: 20px; -webkit-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
+                        -moz-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
+                        box-shadow: 6px 11.5px 5px 3px #6b6b6b; background-color: white;" >
+                            <img src="https://source.unsplash.com/100x100/?boy" class="rounded-circle" alt="">
+                            <h3>Lorem, ipsum:</h3>
+                            <h3>Lorem, ipsum Lorem:</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur a numquam labore rerum, nesciunt officiis, aspernatur delectus voluptatum quod temporibus.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div style="max-width: 400px; border-radius: 1rem; padding: 20px; -webkit-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
+                        -moz-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
+                        box-shadow: 6px 11.5px 5px 3px #6b6b6b; background-color: white;" >
+                            <img src="https://source.unsplash.com/100x100/?boy" class="rounded-circle" alt="">
+                            <h3>Lorem, ipsum:</h3>
+                            <h3>Lorem, ipsum Lorem:</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur a numquam labore rerum, nesciunt officiis, aspernatur delectus voluptatum quod temporibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!-- table -->
+        <section>
+            <div>
+                <div class="d-flex align-items-center">
+                    <h3 class="pe-4">About</h3>
+                    <hr class="text-success w-25">
+                </div> 
+                <h1 class="text-primary">Hacathon</h1>
+                <div class="bg-light p-5">
+                <div class="container">
+                    <table class="table table-striped table-bordered">
+                      <thead class="bg-warning">
+                        <tr>
+                          <th>S No.</th>
+                          <th>Task and Activities</th>
+                          <th>Tentative Timeline</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Launch of Kavach Hackathon</td>
+                          <td>16th Feb 2023</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Registration &amp; Idea Submission</td>
+                          <td>1st March 2023 – 30th April 2023 (Revised)</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Idea Evaluation</td>
+                          <td>16th April 2023 – 15th May 2023</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Announcement of Finalist (in Batches)</td>
+                          <td>16th May 2023 – 31st May 2023</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Training of Finalist</td>
+                          <td>1st June 2023 – 1st July 2023</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Grand Finale of the Hackathon</td>
+                          <td>12th July 2023 – 14th July 2023</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <!-- steps -->
+        <section>
+            <div class="container bg-light">
+                <div class="d-flex align-items-center">
+                    <h3 class="pe-4">About</h3>
+                    <hr class="text-success w-25">
+                </div> 
+                <h1 class="text-primary">Process flow</h1>	         
+          
+        <div class="container-fluid ">
+           <div class="container text-center">
+            
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="">
+                                <p class="text-process">KAVACH-2023 : Problem statements submission by I4C and BPR&D (MHA)</p>
+                                <p class="process-border"> 
+                                    <img src="img/step1.png">
+                                    <span>Step 1</span>
+                                </p>
+                                <p class="arrow-right"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <p class="text-process">Publishing of the problem statements on KAVACH-2023 website. </p>
+                                <p class="process-border"> 
+                                    <img src="img/step2.png">
+                                    <span>Step 2</span>
+                                </p>
+                                <p class="arrow-right"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <p class="text-process">Registration of College SPOCs/Star-ups on KAVACH-2023 portal </p>
+                                <p class="process-border"> 
+                                    <img src="img/step3.png">
+                                    <span>Step 3</span>
+                                </p>
+                                <p class="arrow-right"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="">
+                                <p class="process-border"> 
+                                    <img src="img/step4.png">
+                                    <span>Step 4</span>
+                                </p>
+                                <p class="arrow-right-bottom"></p>
+                                <p class="text-process">College SPOC to be responsible to finalise total best 10 teams from the internal hackathon/or similar activity. SPOC will recommend maximum 10 selected teams for KAVACH-2023 at KAVACH-2023 portal.<br>For Start-ups, after registration the team leader can upload the necessary details on the portal</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <p class="process-border"> 
+                                    <img src="img/step5.png">
+                                    <span>Step 5</span>
+                                </p>
+                                <p class="arrow-right-bottom"></p>
+                                <p class="text-process">The selected teams/start-ups registered at the KAVACH-2023 portal, submit ideas against PSs. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="">
+                                <p class="process-border"> 
+                                    <img src="img/step6.png">
+                                    <span>Step 6</span>
+                                </p>
+                                <p class="arrow-right-bottom"></p>
+                                <p class="text-process">The submitted ideas will be evaluated and for the grand finale teams/start-ups will be shortlisted.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        </section>
+        <br><br>
+        
+    </section>
+
+    <section style="background-color:rgb(163, 163, 254)">
+        <div class="container p-5">
+            <div class="d-flex align-items-center">
+                <h3 class="pe-4">F.A.Q</h3>
+                <hr class="text-success w-25">
+            </div> 
+            <h1 class="text-primary">FREQUENTLY ASKED QUESTIONS FOR KAVACH-2023 PARTICIPANTS</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <div class="d-flex align-items-center">
+                <h3 class="pe-4">Contact</h3>
+                <hr class="text-success w-25">
+            </div> 
+            <h1 class="text-primary">CONTACT US</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="info">
+                    <div class="email">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p><a href="mailto:hackathon@aicte-india.org"> kavach2023@aicte-india.org </a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6" >
+                  <div class="info">
+                    <div class="phone">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call:</h4>
+                      <p><a href="tel:011 2958 1225"> 011 2958 1225 </a></p>
+                      <p><a href="tel:011 2958 1241"> 011 2958 1241 </a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class=" p-3" style="background-color: aqua;">
+        <div class="container text-center ">
+            <div class="copyright">
+              &copy; Copyright <strong><span>KAVACH-2023</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              Designed by <a href="https://mic.gov.in/" target="_blank">MIC</a>
+            </div>
+          </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
