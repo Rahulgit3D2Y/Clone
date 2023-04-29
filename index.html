@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <style>
+  .hero
+  {
+    background-color: rgb(198, 255, 224);
+    height: 800px;
+  }
     .accordion-item {
   margin-bottom: 20px;
 }
@@ -19,66 +24,114 @@
       padding-bottom: 75%; /* 4:3 aspect ratio */
     }
   }
+  .offcanvas {
+  background-color: rgb(198, 255, 224) !important;
+}
+.framework-heading {
+  font-size: 5rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  box-shadow: 0 2px 10px rgba(156, 156, 156, 0.2);
+}
+#my-section {
+  background-image: url('https://source.unsplash.com/1900x1080/?cyberpunk');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 </style>
 <body>
 
-    <!-- Navbar -->
-
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"  aria-label="Offcanvas navbar large" style="height: 100px;">
-             <div class="container-fluid">
-               <a class="navbar-brand" href="#">Res</a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"          aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                 <div class="offcanvas-header">
-                   <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                 </div>
-                 <div class="offcanvas-body">
-                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                     <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="#">Home</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="#">Link</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         Dropdown
-                       </a>
-                       <ul class="dropdown-menu">
-                         <li><a class="dropdown-item" href="#">Action</a></li>
-                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                         <li>
-                           <hr class="dropdown-divider">
-                         </li>
-                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                       </ul>
-                     </li>
-                   </ul>
-                   <form class="d-flex mt-3 mt-lg-0" role="search">
-                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-success" type="submit">Search</button>
-                   </form>
-                 </div>
-               </div>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top"  aria-label="Offcanvas navbar large" style="height: 100px; background-color: rgb(198, 255, 224);">
+         <div class="container">
+           <a class="navbar-brand" href="#">Res</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"          aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+             <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasNavbar2Label">RES</h5>
+               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
              </div>
-        </nav>
-    </section>
-    <!-- <section>
-        <div class="container-fluid d-flex justify-content-center ">
-            <div><img src="https://source.unsplash.com/100x100/?toy" alt=""></div>
-            <div><img src="https://source.unsplash.com/100x100/?cat" alt=""></div>
-            <div><img src="https://source.unsplash.com/100x100/?dog" alt=""></div>
+             <div class="offcanvas-body">
+               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Link</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Dropdown
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li>
+                       <hr class="dropdown-divider">
+                     </li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <div class="navbar-buttons mbr-section-btn"><a class="btn btn-secondary-outline display-4" href="#">Get Started</a> <a class="btn btn-primary display-4" href="#">Read More</a></div>
+            </div>
+             </div>
+           </div>
+         </div>
+    </nav>
+  </section>
+<!-- <section>
+    <div class="container-fluid d-flex justify-content-center ">
+        <div><img src="https://source.unsplash.com/100x100/?toy" alt=""></div>
+        <div><img src="https://source.unsplash.com/100x100/?cat" alt=""></div>
+        <div><img src="https://source.unsplash.com/100x100/?dog" alt=""></div>
+    </div>
+</section> -->
+
+
+<!-- hero -->
+<section class="d-flex align-items-center hero">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row container">
+      <div class="col-lg-7">
+        <div class="text-wrapper align-left mb-5">
+          <div class="subtitle-align-wrap">
+            <div class="subtitle-wrap">
+              <span class="bi bi-envelope"></span>
+              <h2 class="h5">Our Hack</h2>
+              <span class="bi bi-chevron-right"></span>
+            </div>
+          </div>
+  
+          <h1 class="h2 mb-4 fw-bold framework-heading">Hacathon</h1>
+
+          <p class="lead fs-2 fw-semi-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit massa in facilisis malesuada.
+          </p>
+          
+          <div class="mt-4">
+            <a class="btn btn-outline-dark btn-lg" href="#">Get Started</a>
+          </div>
         </div>
-    </section> -->
+      </div>
+      <div class="col-lg-5">
+        <img class="w-100 " src="https://source.unsplash.com/600x400/?hack" alt="" style="border-radius: 1rem;">
+      </div>
+    </div>
+  </div>
+  
+  
+</section>
 
 
-    <!-- carousel -->
-    <section>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+
+    
+ <!-- carousel    -->
+<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item">
                 <img src="https://source.unsplash.com/1000x400/?car" class="d-block w-100 img-fluid" alt="...">
@@ -110,27 +163,155 @@
               $('#carouselExampleFade .carousel-item:nth-child(2)').addClass('active');
             });
           </script>
-          
-    </section>
-
+           -->
     <!-- Marquee -->
-    <section>
+    <!-- <section>
        <marquee behavior="scroll" direction="left"          class="bg-primary p-3" scrollamount="10">
              <a href="https://www.google.com"       style="color:white; padding-right: 10px;">Click         here to go to Google</a>
              <a href="https://www.youtube.com"          style="color:white; padding-right: 10px;">Click         here to go to YouTube</a>
         </marquee>
 
 
+    </section> -->
+    <section class="bg-success" style="min-height: 100px;">
+      <div class="row justify-content-center align-items-center pt-4">
+        <div class="col-md-6 text-center">
+          <h2 class="text-light">Lorem ipsum dolor sit amet consectetur.</h2>
+        </div>
+        <div class="col-md-4 text-center">
+          <button id="toggle-table" class="btn btn-lg btn-warning mt-2 mt-md-0">View List</button>
+        </div>
+      </div>
     </section>
+    
+    <div id="project-table-container" style="display:none;">
+      <div class="data alert alert-primary">
+        <div class="container">
+          <table id="problemStatement1" class="table table-striped table-bordered display nowrap">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">S No.</th>
+                <th scope="col">PS ID</th>
+                <th scope="col">Title of PS</th>
+                <th scope="col">Domain Bucket</th>
+                <th scope="col">Video URL</th>
+                <th scope="col">Description</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>KVH-001</td>
+                <td>New age women safety app</td>
+                <td>Mobile App/Women safety</td>
+                <td style="text-align: center;">
+                  <a class="youtubeIcon" href="https://www.youtube.com/watch?v=ysCiPuz6O-U&list=PLmP9QrmTNPqBANLiyVdb7-foPVvG3ONOm&index=2" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </td>
+                <td>Design and develop a Women safety app that automatically senses the danger to a mobile user and triggers an SOS alert with location details based on multimodal data from a mobile device such as audio, video, image, motion detection etc., given a situation that the user is not able to operate the mobile.</td>
+                <td></td> 
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>KVH-003</td>
+                <td>Advanced fake news detection system</td>
+                <td>Fake News/social media</td>
+                <td style="text-align: center;">
+                  <a class="youtubeIcon" href="https://www.youtube.com/watch?v=Sce0ThMqvIs&list=PLmP9QrmTNPqBANLiyVdb7-foPVvG3ONOm&index=4" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </td>
+                <td>Design and develop a technological solution/software tool for Tracking &amp; Tracing Fake News and its origin using official sources as the input filter. The solution should have a mechanism to mitigate the impact of the spread of Fake News by auto-populating the fake news spreaders’ inboxes with the official/authenticated news content.</td>
+                <td></td> 
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+    
+    <script>
+      var tableContainer = document.getElementById("project-table-container");
+      var toggleButton = document.getElementById("toggle-table");
+      
+              toggleButton.addEventListener("click", function() {
+        if (tableContainer.style.display === "none") {
+        tableContainer.style.display = "block";
+        toggleButton.textContent = "Hide List";
+        } else {
+        tableContainer.style.display = "none";
+        toggleButton.textContent = "View List";
+        }
+              });
+    </script>
 
-    <section class="bg-secondary p-5">
+    
+    
+    
+    
+    <section class=" p-5" id="my-section">
 
 
-        <section>
-            <div class=" container d-flex flex-wrap text-center">
-                <h2 class="text-light">Lorem ipsum dolor sit amet consectetur.</h2>
-                <button class="btn btn-lg btn-warning">View List</button>
-            </div>
+      <section>
+        
+        <div id="table-wrapper" class="data alert alert-primary" style="display:none">
+          <table id="problemStatement1" class="table1 table-striped table-bordered display nowrap" style="width:100%">
+
+            <thead>
+              <tr class="probStateTableHeading">
+                          <th>S No.</th>
+                          <th>PS ID</th>
+                          <th>Title of PS</th>
+                          <th>Domain Bucket</th>
+                          <th>Video URL</th>
+                          <th>Description</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>KVH-001</td>
+                          <td>New age women safety app</td>
+                          <td>Mobile App/Women safety</td>
+                          <td style="text-align: center;">
+                            <a class="youtubeIcon" href="https://www.youtube.com/watch?v=ysCiPuz6O-U&list=PLmP9QrmTNPqBANLiyVdb7-foPVvG3ONOm&index=2" target="_blank">
+                              <i class="bi bi-youtube"></i>
+                            </a>
+                          </td>
+                          <td>Design and develop a Women safety app that automatically senses the danger to a mobile user and triggers an SOS alert with location details based on multimodal data from a mobile device such as audio, video, image, motion detection etc., given a situation that the user is not able to operate the mobile.</td>
+                          <td></td> 
+                                       
+                        </tr>
+                  
+                        
+                        
+                       
+                  
+                      </tbody>
+      
+                    </table>
+      
+                
+                    
+          </div>
+          <script>
+            const toggleButton = document.getElementById("toggle-table");
+            const table = document.getElementById("problemStatement1");
+        
+            toggleButton.addEventListener("click", function() {
+              if (table.style.display === "none") {
+                table.style.display = "table";
+                toggleButton.textContent = "Hide List";
+              } else {
+                table.style.display = "none";
+                toggleButton.textContent = "View List";
+              }
+            });
+          </script>
         </section>
         <br>
         <br>
