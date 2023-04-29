@@ -8,6 +8,16 @@
     <title>Document</title>
 </head>
 <style>
+  *
+  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body
+  {
+    min-width: 300px;
+  }
   .hero
   {
     background-color: rgb(198, 255, 224);
@@ -16,7 +26,11 @@
     .accordion-item {
   margin-bottom: 20px;
 }
-
+@media screen and (width<991px) {
+        .hero {
+            margin-top: 100px;
+        }
+    }
 
     @media screen and (max-width: 768px) {
     /* Adjust the video size for smaller screens */
@@ -36,13 +50,14 @@
   box-shadow: 0 2px 10px rgba(156, 156, 156, 0.2);
 }
 #my-section {
-  background-image: url('https://source.unsplash.com/1900x1080/?cyberpunk');
+  background-image: url('https://source.unsplash.com/1900x1080/?dark');
   background-size: cover;
   background-repeat: no-repeat;
 }
 </style>
 <body>
 
+  <!-- Navbar -->
   <section>
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top"  aria-label="Offcanvas navbar large" style="height: 100px; background-color: rgb(198, 255, 224);">
          <div class="container">
@@ -84,21 +99,15 @@
          </div>
     </nav>
   </section>
-<!-- <section>
-    <div class="container-fluid d-flex justify-content-center ">
-        <div><img src="https://source.unsplash.com/100x100/?toy" alt=""></div>
-        <div><img src="https://source.unsplash.com/100x100/?cat" alt=""></div>
-        <div><img src="https://source.unsplash.com/100x100/?dog" alt=""></div>
-    </div>
-</section> -->
+
 
 
 <!-- hero -->
 <section class="d-flex align-items-center hero">
   <div class="container d-flex justify-content-center align-items-center">
-    <div class="row container">
+    <div class="row container py-5">
       <div class="col-lg-7">
-        <div class="text-wrapper align-left mb-5">
+        <div class="text-wrapper align-left">
           <div class="subtitle-align-wrap">
             <div class="subtitle-wrap">
               <span class="bi bi-envelope"></span>
@@ -107,7 +116,8 @@
             </div>
           </div>
   
-          <h1 class="h2 mb-4 fw-bold framework-heading">Hacathon</h1>
+          <h1 class="h2 mb-4 fw-bold framework-heading fw-medium text-center text-lg-start">Hacathon</h1>
+
 
           <p class="lead fs-2 fw-semi-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit massa in facilisis malesuada.
@@ -129,7 +139,53 @@
 
 
 
+<!-- List     -->
     
+    
+ <!-- carousel    -->
+<!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x400/?car" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x400/?bike" class=" w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1000x400/?truck" class=" w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          <script>
+            $(document).ready(function() {
+              // Remove 'active' class from the first slide
+              $('#carouselExampleFade .carousel-item:first').removeClass('active');
+          
+              // Add 'active' class to the second slide
+              $('#carouselExampleFade .carousel-item:nth-child(2)').addClass('active');
+            });
+          </script>
+           -->
+    <!-- Marquee -->
+    <!-- <section>
+       <marquee behavior="scroll" direction="left"          class="bg-primary p-3" scrollamount="10">
+             <a href="https://www.google.com"       style="color:white; padding-right: 10px;">Click         here to go to Google</a>
+             <a href="https://www.youtube.com"          style="color:white; padding-right: 10px;">Click         here to go to YouTube</a>
+        </marquee>
+
+
+    </section> -->
+
  <!-- carousel    -->
 <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
@@ -182,12 +238,12 @@
           <button id="toggle-table" class="btn btn-lg btn-warning mt-2 mt-md-0">View List</button>
         </div>
       </div>
-    </section>
+    
     
     <div id="project-table-container" style="display:none;">
-      <div class="data alert alert-primary">
-        <div class="container">
-          <table id="problemStatement1" class="table table-striped table-bordered display nowrap">
+      <div class="bg-light p-5">
+        <div class="table-responsive-sm">
+          <table id="problemStatement1"  class="table table-responsive table-striped table-bordered">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">S No.</th>
@@ -247,79 +303,17 @@
         }
               });
     </script>
-
+    </section>
     
     
     
     
     <section class=" p-5" id="my-section">
-
-
-      <section>
-        
-        <div id="table-wrapper" class="data alert alert-primary" style="display:none">
-          <table id="problemStatement1" class="table1 table-striped table-bordered display nowrap" style="width:100%">
-
-            <thead>
-              <tr class="probStateTableHeading">
-                          <th>S No.</th>
-                          <th>PS ID</th>
-                          <th>Title of PS</th>
-                          <th>Domain Bucket</th>
-                          <th>Video URL</th>
-                          <th>Description</th>
-                          <th>Description</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>KVH-001</td>
-                          <td>New age women safety app</td>
-                          <td>Mobile App/Women safety</td>
-                          <td style="text-align: center;">
-                            <a class="youtubeIcon" href="https://www.youtube.com/watch?v=ysCiPuz6O-U&list=PLmP9QrmTNPqBANLiyVdb7-foPVvG3ONOm&index=2" target="_blank">
-                              <i class="bi bi-youtube"></i>
-                            </a>
-                          </td>
-                          <td>Design and develop a Women safety app that automatically senses the danger to a mobile user and triggers an SOS alert with location details based on multimodal data from a mobile device such as audio, video, image, motion detection etc., given a situation that the user is not able to operate the mobile.</td>
-                          <td></td> 
-                                       
-                        </tr>
-                  
-                        
-                        
-                       
-                  
-                      </tbody>
-      
-                    </table>
-      
-                
-                    
-          </div>
-          <script>
-            const toggleButton = document.getElementById("toggle-table");
-            const table = document.getElementById("problemStatement1");
-        
-            toggleButton.addEventListener("click", function() {
-              if (table.style.display === "none") {
-                table.style.display = "table";
-                toggleButton.textContent = "Hide List";
-              } else {
-                table.style.display = "none";
-                toggleButton.textContent = "View List";
-              }
-            });
-          </script>
-        </section>
-        <br>
-        <br>
         <section>
             <div class="row">
-                <div class="col-lg-6">
-                    <img src="https://source.unsplash.com/700x600/?cyber" class="img-fluid" alt="">
-                </div>
+              <div class="col-lg-5">
+                <img class="w-100 " src="https://source.unsplash.com/600x400/?hacker" alt="" style="border-radius: 1rem;">
+              </div>
                 <div class="col-lg-6 text-light">
                     <div class="d-flex align-items-center">
                         <h3 class="pe-4">About</h3>
@@ -327,7 +321,7 @@
                       </div>                   
                     <h1>AAAAAAAAAAA1111
                         <br>AA</h1>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquam dolor, minus perferendis illum totam! Id veritatis laudantium ea magni soluta officia porro quas. Tempore, rerum ducimus? Consequuntur, quod? Iste facilis, fm ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquam dolor, minus perferendis illum totam! Id veritatis laudantium ea magni soluta officia porro quas. Tempore, rerum ducimus? Consequuntur, quod? Iste facilis, fm ipsum dolr, quod? Iste facilis, fm ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique,as. Tempore, rerum ducimus? Consequuntur, quod? Iste facilis, facere totam deserunt voluptate quam nemo rerum!</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquam consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquam consectetur adipisicing elit. Suscipit, delectus! Corrupti earum atque vitae sunt fuga ut similique, odio quis voluptates quisquams dolor, minus perferendis illum totam! Id veritatis laudantium ea magni soluta officia porro quas. Tempore, rerurum!</h4>
                 </div>
             </div>
         </section>
@@ -357,7 +351,7 @@
                           </div>
                     </div>                                        
                     <div class="col-lg-4">
-                        <div style="max-width: 400px; border-radius: 1rem; padding: 20px; -webkit-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
+                        <div style="max-width: 400px;min-width: none; border-radius: 1rem; padding: 20px; -webkit-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
                         -moz-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
                         box-shadow: 6px 11.5px 5px 3px #6b6b6b; background-color: white;" >
                             <img src="https://source.unsplash.com/100x100/?boy" class="rounded-circle" alt="">
@@ -367,7 +361,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div style="max-width: 400px; border-radius: 1rem; padding: 20px; -webkit-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
+                        <div style="max-width: 400px;min-width: none; border-radius: 1rem; padding: 20px; -webkit-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
                         -moz-box-shadow: 6px 11.5px 5px 3px #6b6b6b;
                         box-shadow: 6px 11.5px 5px 3px #6b6b6b; background-color: white;" >
                             <img src="https://source.unsplash.com/100x100/?boy" class="rounded-circle" alt="">
@@ -382,7 +376,7 @@
         <br>
         <br>
         <!-- table -->
-        <section>
+         <section>
             <div>
                 <div class="d-flex align-items-center">
                     <h3 class="pe-4">About</h3>
@@ -390,8 +384,8 @@
                 </div> 
                 <h1 class="text-primary">Hacathon</h1>
                 <div class="bg-light p-5">
-                <div class="container">
-                    <table class="table table-striped table-bordered">
+                  <div class="table-responsive-sm">
+                    <table class="table table-responsive table-striped table-bordered">
                       <thead class="bg-warning">
                         <tr>
                           <th>S No.</th>
